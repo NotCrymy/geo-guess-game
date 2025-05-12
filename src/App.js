@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import HomeScreen from './components/HomeScreen';
+import GameLevel1 from './components/GameLevel1';
 import './App.css';
 
 function App() {
@@ -11,9 +12,8 @@ function App() {
         {!started ? (
           <HomeScreen onStart={() => setStarted(true)} />
         ) : (
-          <div style={{ color: 'black', padding: '2rem' }}>
-            <h1>🎮 Niveau 1</h1>
-            <p>Ici on affichera l'image du jeu à deviner</p>
+          <div className="game-container">
+            <GameLevel1 />
           </div>
         )}
       </div>

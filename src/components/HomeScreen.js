@@ -23,17 +23,17 @@ function HomeScreen({ onStart }) {
     });
 
     return () => {
-        if (effect && effect.destroy) effect.destroy();
+        if (effect && effect.destroy) effect.destroy(); // Cleanup Vanta effect
     };
     }, []);
 
     return (
     <div ref={vantaRef} className="home-screen">
-        <div className="content">
-        <h1>Welcome to GeoGamer</h1>
-        <p>Guess the game then try to guess the spot</p>
-        <button className="start-button" onClick={onStart}>Niveau 1</button>
-      </div>
+        <div className="home-content">
+            <h1>Welcome to GeoGamer</h1>
+            <p>Guess the game then try to guess the spot</p>
+            <button className="start-button" onClick={onStart}>Niveau 1</button>
+        </div>
     </div>
     );
 }

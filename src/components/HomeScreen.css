@@ -3,16 +3,16 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .home-screen canvas {
+}
+
+.home-screen canvas {
     position: absolute !important;
     top: 0;
     left: 0;
     z-index: 0;
-  }
-  
-  .content {
+}
+
+.home-content {
     position: relative;
     z-index: 1;
     height: 100%;
@@ -24,9 +24,9 @@
     text-align: center;
     padding: 2rem;
     cursor: url('../../public/cursor/cursor_48x48_white.png') 24 24, auto;
-  }
-  
-  .start-button {
+}
+
+.start-button {
     margin-top: 2rem;
     padding: 1rem 2rem;
     font-size: 1.2rem;
@@ -36,9 +36,8 @@
     color: white;
     border-radius: 8px;
     transition: background-color 0.3s ease;
-  }
-  
-  .start-button:hover {
+}
+
+.start-button:hover {
     background-color: #000000;
-  }
-  
+}
