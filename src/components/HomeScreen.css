@@ -1,29 +1,44 @@
 .home-screen {
+    position: relative;
     width: 100vw;
     height: 100vh;
-    position: relative;
     overflow: hidden;
+  }
+  
+  .home-screen canvas {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    color: white;
-    cursor: url('/public/cursor/cursor.png'), auto;
-}
-
-.start-button {
-    padding: 1rem 2.5rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    background: rgba(0, 0, 0, 1);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    cursor: url('../../public/cursor/cursor_48x48_white.png') 24 24, auto;
+  }
+  
+  .start-button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: url('../../public/cursor/cursor_48x48_white.png') 24 24, auto;
+    background-color: #ffffff00;
     border: 2px solid white;
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: 0 0 20px white;
-    z-index: 2;
-}
-
-.start-button:hover {
-    background: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 30px white;
-}
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #000000;
+  }
+  

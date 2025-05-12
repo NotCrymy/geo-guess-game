@@ -13,14 +13,12 @@ function HomeScreen({ onStart }) {
 
     const effect = window.VANTA.FOG({
         el: vantaRef.current,
-        mouseControls: true,
-        touchControls: true,
-        highlightColor: 0xff00c8,
-        midtoneColor: 0x00f0ff,
+        highlightColor: 0xff0000,
+        midtoneColor: 0xff9911,
         lowlightColor: 0x111111,
         baseColor: 0x000000,
         blurFactor: 0.8,
-        speed: 1.5,
+        speed: 1.3,
         zoom: 0.8
     });
 
@@ -31,7 +29,11 @@ function HomeScreen({ onStart }) {
 
     return (
     <div ref={vantaRef} className="home-screen">
+        <div className="content">
+        <h1>Welcome to GeoGamer</h1>
+        <p>Guess the game then try to guess the spot</p>
         <button className="start-button" onClick={onStart}>Niveau 1</button>
+      </div>
     </div>
     );
 }
